@@ -1,6 +1,6 @@
 const Education = () => {
   return (
-    <section className="max-w-6xl  flex items-center flex-col gap-10 sm:gap-20 m-auto mb-10">
+    <section className="max-w-6xl  flex items-center flex-col gap-10 sm:gap-20 m-auto mb-20 sm:mb-32">
       <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-main text-center">
         Education
       </h2>

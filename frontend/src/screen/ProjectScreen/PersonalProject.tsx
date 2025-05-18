@@ -8,9 +8,9 @@ const projects = [
     description:
       "A personal portfolio built with React and TailwindCSS to showcase my skills, experience, and projects.",
     image: image,
-    techStack: ["React", "TailwindCSS", "TypeScript"],
+    techStack: ["React", "TailwindCSS", "TypeScript", "Framer motion"],
     demoLink: "https://your-portfolio-site.com",
-    githubLink: "https://github.com/yourusername/portfolio",
+    githubLink: "https://github.com/fizzycoding/My-Portfolio-Website",
   },
   {
     title: "Flashyy App",

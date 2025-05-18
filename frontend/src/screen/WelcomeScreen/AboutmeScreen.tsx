@@ -4,6 +4,10 @@ import { LuBrain } from "react-icons/lu";
 import AboutCard from "../../components/AboutCard";
 import { HiOutlineRocketLaunch } from "react-icons/hi2";
 import { TiFlashOutline } from "react-icons/ti";
+import { motion } from "framer-motion";
+import { useRef } from "react";
+import { useInView } from "framer-motion";
+
 const AboutData = [
   {
     icon: <HiCode size={17} />,
@@ -43,6 +47,9 @@ const AboutData = [
 ];
 
 const AboutmeScreen = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   return (
     <div>
       <section className="overflow-hidden py-10 relative z-10 max-w-5xl m-auto justify-center items-center">
@@ -56,15 +63,25 @@ const AboutmeScreen = () => {
           better digital solutions.
         </p>
 
-        <div className="grid sm:grid-cols-5 sm:grid-rows-3 p-3 sm:p-10 sm:gap-10 gap-4 max-sm:mt-5 w-full max-w-7xl">
+        <div
+          className="grid sm:grid-cols-5 sm:grid-rows-3 p-3 sm:p-10 sm:gap-10 gap-4 max-sm:mt-5 w-full max-w-7xl"
+          ref={ref}
+        >
           {AboutData.map(({ icon, title, description, tailwindClass }, i) => (
-            <AboutCard
+            <motion.div
               key={i}
-              icon={icon}
-              title={title}
-              description={description}
-              tailwindClass={tailwindClass}
-            />
+              className={tailwindClass}
+              initial={{ opacity: 0, y: 50 }}
+              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.5, delay: i * 0.15, ease: "easeOut" }}
+            >
+              <AboutCard
+                icon={icon}
+                title={title}
+                description={description}
+                tailwindClass="w-full h-full"
+              />
+            </motion.div>
           ))}
         </div>
       </section>
