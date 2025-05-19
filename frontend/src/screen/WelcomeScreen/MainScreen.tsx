@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { IoArrowForward } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 const MainScreen = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -20,14 +21,14 @@ const MainScreen = () => {
   return (
     <>
       <section
-        className="min-h-screen flex flex-col justify-center items-center relative z-10 transition-all duration-300 ease-in-out"
+        className="min-h-dvh flex flex-col justify-center items-center relative z-10 transition-all duration-300 ease-in-out"
         style={{
           opacity,
           transform: `scale(${scale})`,
           transition: "opacity 0.2s, transform 0.2s",
         }}
       >
-        <div className="flex flex-col gap-10 mt-32">
+        <div className="flex flex-col gap-10 sm:mt-32">
           {/* Top Badge */}
           <div className="h-full flex">
             <div className="m-auto bg-[rgba(61,116,237,0.15)] border border-[rgba(61,116,237,0.23)] p-2 px-3 rounded-2xl justify-center items-center gap-2 leading-none flex flex-row text-xs sm:text-sm font-semibold text-main">
@@ -53,10 +54,12 @@ const MainScreen = () => {
 
           {/* Buttons */}
           <div className="flex max-sm:flex-col px-12 justify-center gap-5 items-center">
-            <div className="bg-main max-sm:w-full text-white flex font-medium text-xs sm:text-sm justify-center items-center leading-none py-3 gap-1 rounded-xl cursor-pointer hover:bg-main-hover transition-all duration-200 shadow-sm px-5">
-              <span>Discover my project</span>
-              <IoArrowForward size={12} />
-            </div>
+            <Link className="max-sm:w-full" to={"/projects"}>
+              <div className="bg-main max-sm:w-full text-white flex font-medium text-xs sm:text-sm justify-center items-center leading-none py-3 gap-1 rounded-xl cursor-pointer hover:bg-main-hover transition-all duration-200 shadow-sm px-5">
+                <span>Discover my project</span>
+                <IoArrowForward size={12} />
+              </div>
+            </Link>
             <div className="border max-sm:w-full border-zinc-300 text-zinc-800 dark:text-zinc-100 dark:border dark:border-[rgba(147,197,253,0.2)] flex font-medium text-xs sm:text-sm justify-center items-center leading-none py-3 gap-1 rounded-xl cursor-pointer hover:bg-main-ligt transition-all duration-200 shadow-sm px-5">
               <span>Download my CV</span>
             </div>

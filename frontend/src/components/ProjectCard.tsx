@@ -1,7 +1,6 @@
 import React from "react";
 import { IoIosGlobe } from "react-icons/io";
 import { LuGithub } from "react-icons/lu";
-import { MdArrowOutward } from "react-icons/md";
 
 interface ProjectCardProps {
   title: string;
@@ -22,7 +21,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
   return (
     <div className="rounded-lg overflow-hidden bg-zinc-50 dark:bg-[rgba(32,35,255,0.03)] border border-[rgba(255,255,255,0.05)] flex flex-col shadow-sm  transition-all">
-      <img src={image} alt={title} className="h-52 w-full object-cover" />
+      <img
+        src={image}
+        alt={title}
+        className="min-h-52 max-h-52 object-cover  w-full"
+      />
+
       <div className="sm:p-5 p-3 flex h-full justify-between flex-col gap-4">
         <div className="flex flex-col gap-5">
           <div>
