@@ -11,7 +11,7 @@ const ContactPage = () => {
 
   return (
     <section
-      className="overflow-hidden min-h-screen py-10 md:py-20 relative z-10 justify-center max-w-5xl m-auto items-center"
+      className="overflow-hidden min-h-screen py-20 md:py-20 relative z-10 justify-center max-w-5xl m-auto items-center"
       ref={ref}
     >
       <motion.h2
