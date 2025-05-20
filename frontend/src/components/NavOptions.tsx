@@ -1,5 +1,4 @@
 import type { FC, ReactElement } from "react";
-import { Link } from "react-router-dom";
 
 type NavOptionProps = {
   icon: ReactElement;

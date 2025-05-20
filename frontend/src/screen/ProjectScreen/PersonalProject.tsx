@@ -2,7 +2,6 @@ import ProjectCard from "../../components/ProjectCard";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import portfolioImage from "../../assets/image.png";
 import uiVaultImage from "../../assets/uivaiult.png";
-import { Link } from "react-router-dom";
 
 const projects = [
   {
