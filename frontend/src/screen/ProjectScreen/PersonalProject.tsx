@@ -10,7 +10,7 @@ const projects = [
       "A personal portfolio built with React and TailwindCSS to showcase my skills, experience, and projects.",
     image: portfolioImage,
     techStack: ["React", "TailwindCSS", "TypeScript", "Framer motion"],
-    demoLink: "https://your-portfolio-site.com",
+    demoLink: "https://my-portfolio-website-kappa-six.vercel.app/",
     githubLink: "https://github.com/fizzycoding/My-Portfolio-Website",
   },
   {
