@@ -2,6 +2,7 @@ import ProjectCard from "../../components/ProjectCard";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import portfolioImage from "../../assets/image.png";
 import uiVaultImage from "../../assets/uivaiult.png";
+import quickCodeImage from "../../assets/quickCode.png";
 
 const projects = [
   {
@@ -20,6 +21,22 @@ const projects = [
     techStack: ["React", "Javascript", "Tailwind"],
     demoLink: "https://uivault.vercel.app/",
     githubLink: "https://github.com/fizzycoding/UI-Vault",
+  },
+  {
+    title: "Quickcode",
+    description:
+      "Give a prompt. Get a full Next.js app. QuickCode turns ideas into production-ready code instantly.",
+    image: quickCodeImage,
+    techStack: [
+      "NextJS",
+      "Inngest",
+      "E2B Sanbox",
+      "Prisma",
+      "Gemini",
+      "OpenAI",
+    ],
+    demoLink: "https://quikcode.vercel.app/",
+    githubLink: "https://github.com/fizzycoding/Quikcode",
   },
 ];
 

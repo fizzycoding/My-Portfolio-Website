@@ -25,9 +25,9 @@ const TechStack = () => {
                 <span className="font-bold text-lg">Frontend</span>
               </div>
               <div className="flex flex-col gap-5 mt-5 w-full">
-                <StackWithProgress stack="React" progress={60} />
-                <StackWithProgress stack="Typescript" progress={40} />
-                <StackWithProgress stack="TailwindCSS" progress={55} />
+                <StackWithProgress stack="React / NextJS" progress={80} />
+                <StackWithProgress stack="Typescript" progress={75} />
+                <StackWithProgress stack="TailwindCSS" progress={80} />
               </div>
             </div>
           </div>
@@ -42,7 +42,7 @@ const TechStack = () => {
               </div>
               <div className="flex flex-col gap-5 mt-5 w-full">
                 <StackWithProgress stack="NodeJS" progress={60} />
-                <StackWithProgress stack="Spring Boot" progress={20} />
+                <StackWithProgress stack="Go" progress={10} />
               </div>
             </div>
           </div>
@@ -57,8 +57,10 @@ const TechStack = () => {
               </div>
               <div className="flex flex-col gap-5 mt-5 w-full">
                 <StackWithProgress stack="MongoDB" progress={60} />
+                <StackWithProgress stack="Postgres" progress={20} />
               </div>
             </div>
+          
           </div>
 
           <div className="rounded-lg flex-1 overflow-hidden bg-zinc-50 dark:bg-[rgba(32,35,255,0.03)] border border-[rgba(255,255,255,0.05)] flex flex-col shadow-sm  transition-all">
@@ -70,11 +72,12 @@ const TechStack = () => {
                 <span className="font-bold text-lg">Other</span>
               </div>
               <div className="flex flex-col gap-5 mt-5 w-full">
-                <StackWithProgress stack="Java" progress={30} />
+                <StackWithProgress stack="Rabbit MQ" progress={30} />
                 <StackWithProgress stack="JavaScript" progress={70} />
                 <StackWithProgress stack="Redis" progress={50} />
               </div>
             </div>
+          
           </div>
         </div>
       </section>
